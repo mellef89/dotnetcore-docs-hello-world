@@ -27,7 +27,7 @@ jobs:
       - name: List Files and Folders in GitHub Workspace
         run: |
           echo "Listing files and folders in the GitHub workspace:"
-          ls -la ${{env.DOTNET_ROOT}}
+          ls ${{env.DOTNET_ROOT}}
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
